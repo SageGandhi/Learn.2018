@@ -1,0 +1,7 @@
+============================================================================01================================================================================================
+https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html:
+Aws Provided Account & Amazon Internet Services Private Limited Provided Account[Based On Indian Address].Payer Account & Linked Account.When you used consolidated billing in 
+the Billing and Cost Management console, you had one account that was designated as a payer account.The payer account paid the charges that were accrued by all the other 
+accounts, known as linked accounts, in your consolidated billing family.The same idea applies to AWS Organizations: Each organization has one account, called a master account,
+that pays the charges of all the member accounts in that organization.The member accounts are linked to the master account for billing purposes, just like the linked accounts 
+in consolidated billing were linked to a payer account.
