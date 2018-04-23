@@ -5,4 +5,8 @@ Account Settings->Account Id In Profile.
 02:
 Activate MultiFactor Authentication:Scan Quick Response Code& Provide Authentication Code Twice.Use Google Authenticator.
 03:
-Creating User With Programmatic access[access key ID and secret access key]/AWS Management Console access[AWS Management Console]
+Creating User With Programmatic access[access key ID and secret access key]/AWS Management Console access[AWS Management Console].Set Permission Via
+Add user to group,Copy permissions from existing user,Attach existing policies directly.Provide sys-admin-aws As Group name & Attach Admin Policy
+[AdministratorAccess].Then Create The Group & Review/Create User.User Will Have Arn.GoTo User Sign-in credentials->Assigned MFA device->
+A virtual MFA device->Scan QR Code/Copy secret configuration key->Provide Authentication code 1 & 2->Activate virtual MFA.Also Access keys 
+Can Be Make inactive Or Deleted Or Created In Access keys Section.
