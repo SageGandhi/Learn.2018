@@ -1,9 +1,0 @@
-==============================================================
-Install Node & Check node --version/node -v.
-Read->Evaluate->Print->Loop->Read[Repl].
-In Repl Use .help To Get Help Meta Command.
-[.break,.clear,.editor,.exit,.help,.load,.save].
-Use Tab Key For AutoComplete In Node Repl.
-Install NodeUnit For Unit Testing:npm install -g nodeunit
-Install Express For Web:npm install express[Don't Use -g Flag]
-==============================================================

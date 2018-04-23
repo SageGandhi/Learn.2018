@@ -1,4 +1,0 @@
-Create A User With Programmatic Access,Attach Existing Policies Directly[Search Dynamo] With AmazonDynamoDBFullAccess.
-Access Key Id:AKIAJTEHLJVS6EC4UXXQ,Secret Access Key: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
-Set AWS_REGION=ap-south-1/Set AWS_ACCESS_KEY_ID=AKIAJTEHLJVS6EC4UXXQ/Set AWS_SECRET_ACCESS_KEY=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
-Set These Values In Terminal Using Run As Administrator.If That Fails Pass These Directly When Instantiating DynamoDb.

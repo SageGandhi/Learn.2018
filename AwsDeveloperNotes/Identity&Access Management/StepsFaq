@@ -1,0 +1,8 @@
+01:
+User Signin Address:GoTo IAM,Welcome to Identity and Access Management->IAM users sign-in link:->https://<Account Id>.signin.aws.amazon.com/console.
+Change This Using Customize & Provide Account Alias->https://<Account Alias>.signin.aws.amazon.com/console.Get Your Account Id From My Account->
+Account Settings->Account Id In Profile.
+02:
+Activate MultiFactor Authentication:Scan Quick Response Code& Provide Authentication Code Twice.Use Google Authenticator.
+03:
+Creating User With Programmatic access[access key ID and secret access key]/AWS Management Console access[AWS Management Console]
