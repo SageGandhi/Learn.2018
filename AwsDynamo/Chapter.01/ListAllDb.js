@@ -2,8 +2,8 @@ var Aws=require('aws-sdk'),
     prettyPrint=require('./PrettyPrint');
 var awsCredential = {
     'region':'ap-south-1',
-    'accessKeyId':'AKIAJTEHLJVS6EC4UXXQ',
-    'secretAccessKey':'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'
+    'accessKeyId':'AWS_ACCESS_KEY_ID',
+    'secretAccessKey':'AWS_SECRET_ACCESS_KEY'
 }
 var dynamoDb=new Aws.DynamoDB(awsCredential);
 dynamoDb.listTables({})
