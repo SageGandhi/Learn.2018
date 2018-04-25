@@ -1,13 +1,13 @@
-============================================================================01================================================================================================
+============================================================================01:Billing Organization============================================================================
 https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html:
 Aws Provided Account & Amazon Internet Services Private Limited Provided Account[Based On Indian Address].Payer Account & Linked Account.When you used consolidated billing in 
 the Billing and Cost Management console, you had one account that was designated as a payer account.The payer account paid the charges that were accrued by all the other 
 accounts, known as linked accounts, in your consolidated billing family.The same idea applies to AWS Organizations: Each organization has one account, called a master account,
 that pays the charges of all the member accounts in that organization.The member accounts are linked to the master account for billing purposes, just like the linked accounts 
 in consolidated billing were linked to a payer account.
-============================================================================02================================================================================================
+============================================================================02:Identity&Access Management======================================================================
 Iam[Identity&Access Management] Follows/Adheres To Payment Card Industry (PCI) Data Security Standard(DSS).
-============================================================================03================================================================================================
+============================================================================03:Simple Notification Service=====================================================================
 https://docs.aws.amazon.com/sns/latest/dg/json-formats.html#http-notification-json
 Sns[Simple Notification Service]:Headers:
 POST / HTTP/1.1[Message Will Be Post]
@@ -81,13 +81,13 @@ User-Agent: Amazon Simple Notification Service Agent
 "Signature" : "EXAMPLEHXgJmXqnqsHTlqOCk7TIZsnk8zpJJoQbr8leD+8kAHcke3ClC4VPOvdpZo9s/vR9GOznKab6sjGxE8uwqDI9HwpDm8lGxSlFGuwCruWeecnt7MdJCNh0XK4XQCbtGoXB762ePJfaSWi9tYwzW65zAFU04WkNBkNsIf60=",
 "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-f3ecfb7224c7233fe7bb5f59f96de52f.pem"
 }
-============================================================================04================================================================================================
+============================================================================04:Simple Notification Service=====================================================================
 When Amazon SNS sends a Notification to a subscribed HTTP or HTTPS endpoint, the POST message sent to the endpoint has a message body that contains a JSON document with the 
 following name/value pairs:Message/MessageId/Signature/SignatureVersion/SigningCertURL/Subject[Optional]/Timestamp/TopicArn/Type/UnsubscribeURL.
-============================================================================05================================================================================================
+============================================================================05:Identity&Access Management======================================================================
 Names Of IAM User Will Not Contain #.Names of users, groups, roles, policies, instance profiles, and server certificates must be alphanumeric, including the following common 
 characters: plus (+), equal (=), comma (,), period (.), at (@), underscore (_), and hyphen (-).https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html
-============================================================================06================================================================================================
+============================================================================06:Identity&Access Management======================================================================
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html: 
 Imagine that you are creating a mobile app that accesses AWS resources, such as a game that runs on a mobile device and stores player and score information using Amazon S3 and 
 DynamoDB.When you write such an app, you'll make requests to AWS services that must be signed with an AWS access key. However, we strongly recommend that you do not embed or 
@@ -101,3 +101,41 @@ that you use Amazon Cognito because it acts as an identity broker and does much 
 for Mobile Apps.If you don't use Amazon Cognito, then you must write code that interacts with a web IdP (Login with Amazon, Facebook, Google, or any other OIDC-compatible IdP) 
 and then calls the AssumeRoleWithWebIdentity API to trade the authentication token you get from those IdPs for AWS temporary security credentials. If you have already used 
 this approach for existing apps, you can continue to use it.
+============================================================================07:Relational Database Service=====================================================================
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html#Overview.Tagging: Tags Are Used For Billing Purpose.Each Amazon RDS resource has a tag set, which 
+contains all the tags that are assigned to that Amazon RDS resource. A tag set can contain as many as 10 tags, or it can be empty. If you add a tag to an Amazon RDS resource 
+that has the same key as an existing tag on resource, the new value overwrites the old value.
+============================================================================08:Elastic Compute Cloud===========================================================================
+For Specific Amazon Machine Image Root Device Type Can Be Amazon EBS-backed AMI[ebs]/instance store-backed AMI[instance store].
+EC2-Classic: We release the public and private IPv4 addresses for the instance when you stop the instance, and assign new ones when you restart it.EC2-VPC: The instance 
+retains its private IPv4 addresses and any IPv6 addresses when stopped and restarted. We release the public IPv4 address and assign a new one when you restart it.
+
+EC2-Classic: We disassociate any Elastic IP address that's associated with the instance. You're charged for Elastic IP addresses that aren't associated with an instance. 
+When you restart the instance, you must associate the Elastic IP address with the instance; we don't do this automatically.EC2-VPC: The instance retains its associated 
+Elastic IP addresses. You're charged for any Elastic IP addresses associated with a stopped instance.
+============================================================================09:DynamoDB=======================================================================================
+DynamoDB Supports Web Identity Federation Using Facebook,Google,Amazon As Identity Provider To request temporary security credentials.
+============================================================================10:Elastic Compute Cloud==========================================================================
+Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance. Billing ends when the instance terminates, which could occur through a web services command, 
+by running "shutdown -h", or through instance failure. When you stop an instance, we shut it down but don't charge hourly usage for a stopped instance, or data transfer fees, 
+but we do charge for the storage for any Amazon EBS volumes.
+============================================================================11:DynamoDB=======================================================================================
+Every global secondary index must have a partition key, and can have an optional sort key. The index key schema can be different from the base table schema; you could have a 
+table with a simple primary key (partition key), and create a global secondary index with a composite primary key (partition key and sort key) — or vice-versa. The index key 
+attributes can consist of any top-level String, Number, or Binary attributes from the base table; other scalar types, document types, and set types are not allowed.
+============================================================================12:Elastic Compute Cloud==========================================================================
+curl http://169.254.169.254/latest/user-data|curl http://169.254.169.254/latest/meta-data:instance metadata Will contain different categories & only available from instance:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories[local-ipv4:The private IPv4 address of the instance. In cases where 
+multiple network interfaces are present, this refers to the eth0 device (the device for which the device number is 0),public-ipv4:The public IPv4 address. If an Elastic IP 
+address is associated with the instance, the value returned is the Elastic IP address.]
+============================================================================12:SimpleQueueService=============================================================================
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html:
+AddPermission/ChangeMessageVisibility/ChangeMessageVisibilityBatch/CreateQueue/DeleteMessage/DeleteMessageBatch/DeleteQueue/GetQueueAttributes/GetQueueUrl/
+ListDeadLetterSourceQueues/ListQueues/ListQueueTags/PurgeQueue/ReceiveMessage/RemovePermission/SendMessage/SendMessageBatch/SetQueueAttributes/TagQueue/UntagQueue
+============================================================================13:Simple Notification Service=====================================================================
+In order for customers to have broad flexibility of delivery mechanisms, Amazon SNS supports notifications over multiple transport protocols. Customers can select one the following transports as part of the subscription requests:
+“HTTP”, “HTTPS” – Subscribers specify a URL as part of the subscription registration; notifications will be delivered through an HTTP POST to the specified URL.
+”Email”, “Email-JSON” – Messages are sent to registered addresses as email. Email-JSON sends notifications as a JSON object, while Email sends text-based email.
+“SQS” – Users can specify an SQS standard queue as the endpoint; Amazon SNS will enqueue a notification message to the specified queue (which subscribers can then process 
+using SQS APIs such as ReceiveMessage, DeleteMessage, etc.). Note that FIFO queues are not currently supported.
+“SMS” – Messages are sent to registered phone numbers as SMS text messages.
