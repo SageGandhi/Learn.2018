@@ -130,8 +130,26 @@ multiple network interfaces are present, this refers to the eth0 device (the dev
 address is associated with the instance, the value returned is the Elastic IP address.]
 ============================================================================12:SimpleQueueService=============================================================================
 https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html:
-AddPermission/ChangeMessageVisibility/ChangeMessageVisibilityBatch/CreateQueue/DeleteMessage/DeleteMessageBatch/DeleteQueue/GetQueueAttributes/GetQueueUrl/
-ListDeadLetterSourceQueues/ListQueues/ListQueueTags/PurgeQueue/ReceiveMessage/RemovePermission/SendMessage/SendMessageBatch/SetQueueAttributes/TagQueue/UntagQueue
+AddPermission
+ChangeMessageVisibility
+ChangeMessageVisibilityBatch
+CreateQueue
+DeleteMessage
+DeleteMessageBatch
+DeleteQueue
+GetQueueAttributes
+GetQueueUrl
+ListDeadLetterSourceQueues
+ListQueues
+ListQueueTags
+PurgeQueue
+ReceiveMessage
+RemovePermission
+SendMessage
+SendMessageBatch
+SetQueueAttributes
+TagQueue
+UntagQueue
 ============================================================================13:Simple Notification Service====================================================================
 In order for customers to have broad flexibility of delivery mechanisms, Amazon SNS supports notifications over multiple transport protocols. Customers can select one the following transports as part of the subscription requests:
 “HTTP”, “HTTPS” – Subscribers specify a URL as part of the subscription registration; notifications will be delivered through an HTTP POST to the specified URL.

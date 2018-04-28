@@ -4,5 +4,6 @@ Programming Paradigm:https://www.youtube.com/playlist?list=PL08D9FA018A965057
 Computer Architechture:https://www.coursera.org/learn/comparch/home/welcome
 
 Amazon Web Service Burinng Questions:
-Recovery Time Objective[RTO] Vs Recovery Point Objective[RPO]:Glicier With High Recovery Time Objective?
-HotSite/ColdSite/WarmSite/BacupSite/OffSite/OnSite.
+Recovery Time Objective[RTO] Vs Recovery Point Objective[RPO]:Why Glicier With High Recovery Time Objective?
+HotSite/ColdSite/WarmSite/BacupSite/OffSite/OnSite?
+SignedUrl With Expiry Date & Pre-Signed Url In S3?
