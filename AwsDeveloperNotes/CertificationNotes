@@ -140,3 +140,45 @@ In order for customers to have broad flexibility of delivery mechanisms, Amazon 
 using SQS APIs such as ReceiveMessage, DeleteMessage, etc.). Note that FIFO queues are not currently supported.
 “SMS” – Messages are sent to registered phone numbers as SMS text messages.
 ============================================================================14:OpsWorks Vs CloudFormation Vs Elastic BeanStalk================================================
+With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. AWS Elastic 
+Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and Elastic Beanstalk automatically handles the details of 
+capacity provisioning, load balancing, scaling, and application health monitoring. Elastic Beanstalk supports applications developed in Java, PHP, .NET, Node.js, Python, and 
+Ruby, as well as different container types for each language. A container defines the infrastructure and software stack to be used for a given environment. When you deploy your
+application, Elastic Beanstalk provisions one or more AWS resources, such as Amazon EC2 instances. The software stack that runs on your Amazon EC2 instances depends on the 
+container type. AWS Elastic Beanstalk stores your application files and, optionally, server log files in Amazon S3. If you are using the AWS Management Console, the AWS Toolkit
+for Visual Studio, or AWS Toolkit for Eclipse, an Amazon S3 bucket will be created in your account for you and the files you upload will be automatically copied from your local
+client to Amazon S3. Optionally, you may configure Elastic Beanstalk to copy your server log files every hour to Amazon S3. You do this by editing the environment configuration
+settings.
+
+AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to 
+automate the configurations of your servers. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances
+or on-premises compute environments. OpsWorks has three offerings, AWS Opsworks for Chef Automate, AWS OpsWorks for Puppet Enterprise, and AWS OpsWorks Stacks.
+
+AWS CloudFormation makes deploying a set of Amazon Web Services (AWS) resources as simple as submitting a template. A template is a simple text file that describes a stack, a 
+collection of AWS resources you want to deploy together as a group. You use the template to define all the AWS resources you want in your stack. This can include Amazon 
+Elastic Compute Cloud instances, Amazon Relational Database Service DB Instances, and other resources.CloudFormation also supports OpsWorks and OpsWorks components (stacks, 
+layers, instances, and applications) can be modeled inside CloudFormation templates, and provisioned as CloudFormation stacks.CloudFormation supports Elastic Beanstalk 
+application environments as one of the AWS resource types.
+============================================================================14:Glacier Usage===================================================================================
+For Active Database Storage Use Relational Database Service[RDS]/Elastic Block Storage[EBS].For Frequenctly Accessible Data Use Simple Storage Service[S3] Or Elastic Block 
+Storage[EBS].For Cached Session Data Use ElasticCache.Use Glacier For InFrequently Access Data & Data Archive.
+============================================================================15:DynamoDB Global Secondary Index=================================================================
+Only Global Secondary Index In DynamoDB Can Be Modified After Creation.
+============================================================================16:Glacier Usage===================================================================================
+https://docs.aws.amazon.com/amazonglacier/latest/dev/amazon-glacier-data-model.html: 
+Vault[container for storing archives.Within a Region,an account must use unique vault names,Uri:https://<region-specific endpoint>/<account-id>/vaults/<vaultname>].
+
+Archive[An archive can be any data with an ID,Uri:https://<region-specific endpoint>/<account-id>/vaults/<vault-name>/archives/<archive-id>.can store an unlimited number of 
+archives in a vault].
+
+Job[Amazon Glacier jobs can perform a select query on an archive, retrieve an archive, or get an inventory of a vault. When performing a query on an archive, you initiate a 
+job providing a SQL query and list of Amazon Glacier archive objects. Amazon Glacier Select runs the query in place and writes the output results to Amazon S3.Retrieving an 
+archive and vault inventory (list of archives) are asynchronous operations in Amazon Glacier in which you first initiate a job, and then download the job output after Amazon 
+Glacier completes the job.Uri:https://<region-specific endpoint>/<account-id>/vaults/<vault-name>/jobs/<job-id>]
+
+Notification Configuration.Because jobs take time to complete, Amazon Glacier supports a notification mechanism to notify you when a job is complete. You can configure a vault
+to send notification to an Amazon Simple Notification Service topic when jobs complete. You can specify one SNS topic per vault in the notification configuration.
+https://<region-specific endpoint>/<account-id>/vaults/<vault-name>/notification-configuration Per vault.
+============================================================================17:Elastic  BeanStalk===============================================================================
+AWS Elastic Beanstalk uses proven AWS features and services, such as Amazon EC2, Amazon RDS, Elastic Load Balancing, Auto Scaling, Amazon S3, and Amazon SNS, to create an 
+environment that runs your application. The current version of AWS Elastic Beanstalk uses the Amazon Linux AMI or the Windows Server 2012 R2 AMI.
