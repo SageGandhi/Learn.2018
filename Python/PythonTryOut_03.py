@@ -1,3 +1,5 @@
+from typing import Any, Callable
+
 user_names = []
 
 
@@ -22,5 +24,5 @@ def read_lines_using_yield(file_to_read):
 
 load_from_file()
 
-square_value = lambda input_x:  input_x * input_x
+square_value: Callable[[Any], Any] = lambda input_x:  input_x * input_x
 print(square_value(123456789))
