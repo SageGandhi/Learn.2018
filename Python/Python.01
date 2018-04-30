@@ -1,0 +1,6 @@
+Install Python 3 With PyCharm.
+Dynamically Typed Language[Python] Vs Statically Typed Language[Java].Although Type Hinting Feature Available From Python 3.5.
+Unicode Text In Python 3 But Ascii Code In Python 2.
+Python Can Use Format Just Like MessageFormatter In Java.Also Support String Interpolation[Insertion Of Something Of A Different 
+Nature[Variable] Into Something Else[String].],But For That We Need To Prefix The String With f"String{Variable}".Similarly For 
+Raw String[Python Will Not Do Automatic BackSlash Escape] Use r"String With BackSlash" & Unicode String Use u"Unicode String".
