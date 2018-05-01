@@ -1,0 +1,5 @@
+==========Not Related To DynamoDb
+Configure Git From Visual Studio Code:
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+==========Related To DynamoDb
