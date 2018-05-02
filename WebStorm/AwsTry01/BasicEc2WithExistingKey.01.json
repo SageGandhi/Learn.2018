@@ -1,0 +1,14 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources":{
+        "Ec201":{
+            "Type":"AWS::EC2::Instance",
+            "Properties":{
+                "AvailabilityZone":"ap-south-1a",
+                "KeyName":"DynamoDbKp",
+                "InstanceType":"t2.micro",
+                "ImageId":"ami-b46f48db"
+            }
+        }
+    }
+}
