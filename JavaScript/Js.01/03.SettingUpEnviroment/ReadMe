@@ -42,3 +42,6 @@ Production Application Build & Deployment:Minification[RollUp/WebPack2/WebPack].
 Bundle Spliting:npm install --savedev json-loader & Add Loader In WebPack Config:{ loader: 'json-loader', test: /\.json$/ }.Do npm run build --silent.
 Cache Busting:Save Http Request.Force Request For New Version.Use import WebpackMd5Hash from 'webpack-md5-hash'; In WebPack Config.Add PlugIn & Output FileName Contains Hash.Do npm run build --silent.For Css Add import ExtractTextPlugin from 'extract-text-webpack-plugin'; & In PlugIn Section & Loader Section.Do npm run build --silent.
 For Error Logging We Can Use TrackJs/Sentry/New Relic/RayGun.Html WebPack Plugin Supports Loader Languages:Jade/EmbeddedJs/UnderScore/HandleBars/HtmlLoader.Add Variable In Html WebPack Plugin.
+
+Deploy:Ui & Api Must Be Separate.Use Content Delivery Network For Static Content.Cloud[Aws/Azure/Heroku/FireBase/GoogleCloud/Static[Netlify/GithubPages/Surge]].Before That Delete Everything From TravisCi[https://travis-ci.org/getting_started] & AppVeyor[https://ci.appveyor.com/projects].
+Goto Heroku[SignUp]https://dashboard.heroku.com/apps:Create A New NodeJs App.Download & Install Heroku Command Line Interface/Heroku Toolbelt.
