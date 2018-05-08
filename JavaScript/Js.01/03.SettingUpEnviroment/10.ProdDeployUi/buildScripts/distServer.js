@@ -9,5 +9,4 @@ const app = express();
 app.use(express.static('dist'));//Added For Dist Server
 app.use(compression());//Added For Dist Server
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../dist/index.html')));//Changed As Per Dist
-app.get('/users', (req, res) => res.json([{ "id": 247119, "firstName": "Prajit", "lastName": "Gandhi", "email": "Prajit.Gandhi@gmail.com" }]));
 app.listen(port, (err) => err ? console.log(err) : open('http://localhost:' + port));//eslint-disable-line no-console

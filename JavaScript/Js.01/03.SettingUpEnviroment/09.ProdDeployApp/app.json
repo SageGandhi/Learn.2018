@@ -1,0 +1,6 @@
+{
+  "name": "Node Api Heroku Example",
+  "description": "A Node Api Heroku Example Use Express Hosted On Heroku",
+  "repository": "https://github.com/SageGandhi/SettingUpEnviromentProdDeployApp.git",
+  "keywords": ["Node", "Express", "Static"]
+}

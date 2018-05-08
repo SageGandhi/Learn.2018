@@ -1,0 +1,22 @@
+{
+  "name": "setting~up~enviroment~prod~deploy~app",
+  "version": "1.0.0",
+  "description": "Node Api Heroku Example.A Node Api Heroku Example Use Express Hosted On Heroku.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "2.8.1",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SageGandhi/SettingUpEnviromentProdDeployApp.git"
+  },
+  "author": "Prajit Gandhi",
+  "license": "MIT"
+}

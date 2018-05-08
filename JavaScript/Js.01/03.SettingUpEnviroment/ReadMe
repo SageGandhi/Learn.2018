@@ -43,5 +43,14 @@ Bundle Spliting:npm install --savedev json-loader & Add Loader In WebPack Config
 Cache Busting:Save Http Request.Force Request For New Version.Use import WebpackMd5Hash from 'webpack-md5-hash'; In WebPack Config.Add PlugIn & Output FileName Contains Hash.Do npm run build --silent.For Css Add import ExtractTextPlugin from 'extract-text-webpack-plugin'; & In PlugIn Section & Loader Section.Do npm run build --silent.
 For Error Logging We Can Use TrackJs/Sentry/New Relic/RayGun.Html WebPack Plugin Supports Loader Languages:Jade/EmbeddedJs/UnderScore/HandleBars/HtmlLoader.Add Variable In Html WebPack Plugin.
 
-Deploy:Ui & Api Must Be Separate.Use Content Delivery Network For Static Content.Cloud[Aws/Azure/Heroku/FireBase/GoogleCloud/Static[Netlify/GithubPages/Surge]].Before That Delete Everything From TravisCi[https://travis-ci.org/getting_started] & AppVeyor[https://ci.appveyor.com/projects].
-Goto Heroku[SignUp]https://dashboard.heroku.com/apps:Create A New NodeJs App.Download & Install Heroku Command Line Interface/Heroku Toolbelt.
+Deploy:Ui & Api Must Be Separate.Use Content Delivery Network For Static Content.Cloud[Aws/Azure/Heroku/FireBase/GoogleCloud/Static[Netlify/GithubPages/Surge]].Before That Delete Everything From TravisCi[https://travis-ci.org/getting_started] & AppVeyor[https://ci.appveyor.com/projects].Goto Heroku[SignUp] https://dashboard.heroku.com/apps: Create A New NodeJs App.Download & Install Heroku Command Line Interface/Heroku Toolbelt Without Git As Git Already Installed.
+Do Heroku Login:heroku login/Check Version:node --version/npm --version/git --version.Learn.2018\JavaScript\Js.01\03.SettingUpEnviroment\09.ProdDeployApp Use git init/Create Git Repo/git remote add origin https://github.com/SageGandhi/SettingUpEnviromentProdDeployApp.git/git remote --verbose/git pull origin master/git add ./git commit -m "Initial App"/git push --force origin master.Do npm install.app.json Define App To Heroku/Procfile Define Command That Heroku Will Run.
+
+Do heroku create=>https://pacific-oasis-44794.herokuapp.com/ [pacific-oasis-44794=>https://git.heroku.com/pacific-oasis-44794.git]
+Do heroku git:remote -a pacific-oasis-44794,Then git push heroku master To Deploy App.Try Deployed Url:https://pacific-oasis-44794.herokuapp.com/ &
+https://pacific-oasis-44794.herokuapp.com/users.InUi Project .\src\api\baseUrl.js=>Paste Heroku Deployed Url[getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://pacific-oasis-44794.herokuapp.com/'].Also In 10.ProdDeployUi\buildScripts\distServer.js Remove Fixture Data.
+
+Production Deployment Using Surge:Already Listed In Package.json.Add "deploy": "surge ./dist" In Script Section.Do npm install --silent,Then npm run build --silent.
+Kill This Process & Do npm run deploy.Enter Email,Password.Project Is Published & Running At http://toothsome-chance.surge.sh.
+
+Update Starter Kit:YeoMan/GitHub/Npm.Create YeoMan Template Generator.Encapsulate Inside A Npm Package[Unable To Tweak Because Of Packaging].Search For Development Environment/BoilerPlate/StarterKit/StarterProject/Seed[Angular]
