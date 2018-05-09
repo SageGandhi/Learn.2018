@@ -41,7 +41,32 @@ var evenDoubler = (value,callBack)=>{
             }else{
                 console.log("The Results Are: " + result + " (" + waitTime + " ms)");
             }
+            if(loopIndex==noOfIteration){//Concept Of Closure
+                //To Resolve This We Need External Counter
+                console.log('Done Executing....',loopIndex,noOfIteration);
+            }
         });
     }
     console.log('Done Iterating......');
 })(10);
+//ChristmasTree Problem
+setTimeout(()=>{
+    console.log("ChristmasTreeLeavel:1:Entry");
+    setTimeout(()=>{
+        console.log("ChristmasTreeLeavel:2:Entry");
+        setTimeout(()=>{
+            console.log("ChristmasTreeLeavel:3:Entry");
+            setTimeout(()=>{
+                console.log("ChristmasTreeLeavel:4:Entry");
+                setTimeout(()=>{
+                    console.log("ChristmasTreeLeavel:5:Entry");
+                    console.log("ChristmasTreeLeavel:5:Exit");
+                },100);
+                console.log("ChristmasTreeLeavel:4:Exit");
+            },100);
+            console.log("ChristmasTreeLeavel:3:Exit");
+        },100);
+        console.log("ChristmasTreeLeavel:2:Exit");
+    },100);
+    console.log("ChristmasTreeLeavel:1:Exit");
+},100);
