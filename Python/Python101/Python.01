@@ -5,7 +5,7 @@ Python 3 But Ascii Code In Python 2.Python Can Use Format Just Like MessageForma
 Escape] Use r"String With BackSlash" & Unicode String Use u"Unicode String".
 ===============================================================================================================================================================================
 Pip Is Package Manager For Python[Use pip/pip3 For Installing Any Package,pip3 install flask].To Upgrade Use Command:python -m pip install --upgrade pip.Go To Python Package 
-Index[PyPi] WebSiteTo Get All Package.
+Index[PyPi] WebSite To Get All Package.
 ===============================================================================================================================================================================
 Create A Virtual Environment:Install Package: pip install virtualenv/Create: virtualenv PrajitsFirstVirtualEnv/Activate/De-Activate virtualenv Is Also Possible.
 ===============================================================================================================================================================================
