@@ -1,0 +1,17 @@
+Developed By Ryan Dahl[Check Out Original Presentation In JsConf.Eu].
+NodeJs Building Blocks:libuv[Multi-Platform C Library That Provides Support For Asynchronous Io Based On Event Loops],V8[Google JavaScript Engine],[Custom Js/C++ Code].
+Use Nvm[Node Version Manager:https://github.com/creationix/nvm]:Run Linux SubSystem.Do Command As Mentioned.
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+export NVM_DIR="$HOME/.nvm" # Exporting To Environment Variable
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This Loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This Loads nvm Bash Completion
+command -v nvm #Verify If Nvm Installed Correctly
+nvm install node # Install Latest Node Similarly nvm install 8.0.0
+nvm use node # Use Latest Node Version nvm use 8.0.0
+nvm install --lts # Install Node Version LongTerm Support
+nvm use --lts # Use Node Version LongTerm Support
+nvm alias default v8.11.1 #Set The Default Node Version To Be Used
+To Search Nodejs Package Use Aptitude[If Command Not Found For Kali Use sudo apt-get install aptitude].
+
+Use https://ide.c9.io/ For Development.Non-Blocking Event Driven Approach Using Event Loop.
