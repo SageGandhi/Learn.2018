@@ -15,3 +15,7 @@ nvm alias default v8.11.1 #Set The Default Node Version To Be Used
 To Search Nodejs Package Use Aptitude[If Command Not Found For Kali Use sudo apt-get install aptitude].
 
 Use https://ide.c9.io/ For Development.Non-Blocking Event Driven Approach Using Event Loop[By Philip Roberts].Event Based Non-Blocking Asynchronous Code Use CallBack Function,EventEmitter.Function Definition[Input Parameter,CallBack Function[Last Parameter]].CallBack Function Definition[Error,Success/Output].01.Example.js Illustrates Event Loop Understanding,Create Basic Http Server,CallBack.
+
+Require Function Loads A Module & Assign In A Variable To Be Used By Application.Naming Convention:Exports Set Of Variable Follows Camel Case/If Module Need To Be Instantiated InitCap CamelCase.Built In Module[fs/http/crypto/os],Each JavaScript File Is A Module[./ Or ../ Is Required,module.exports Define Exported Functionality Of A Module],Npm Modules[npm install <ModuleName> Install This In node_modules Folder,To Use Node Module From Cmd Use --global Flag When Installing Via npm install --global <ModuleName>].Learn About Package.json[https://docs.npmjs.com/files/package.json].
+
+Non-Blocking Does Not Always Means CallBack.
