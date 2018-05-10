@@ -32,4 +32,5 @@ var fileSystem = require("fs");
 request('https://www.google.com/').pipe(fileSystem.createWriteStream('GoogleHomePage.html'));
 //ReadableStream+BothType+WritableStream=>Piping Gzipped Version
 var zipLib = require("zlib");
+//Type zcat Command To View Gzipped File
 request('https://www.google.com/').pipe(zipLib.createGzip()).pipe(fileSystem.createWriteStream('GoogleHomePageZippped.html.gz'));

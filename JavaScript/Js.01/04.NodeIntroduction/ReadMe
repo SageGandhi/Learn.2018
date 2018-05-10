@@ -28,4 +28,4 @@ This In Turn Emits The pipe Event On WritableStream.Pipe Function Under The Hood
     3.When WritableStream Is Ready To Receive More Data,The Drain Event Is Emitted & resume Function On The ReadableStream Is Invoked.
     4.Once The ReadableStream Is Finished,The end Event Is Emitted & The End Function On The WritableStream Is Invoked.
     
-    
+Local System Access:Node Process Object/FileSystem/Os Module/Buffers.    
