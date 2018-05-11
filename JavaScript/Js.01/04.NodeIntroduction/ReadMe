@@ -31,4 +31,8 @@ This In Turn Emits The pipe Event On WritableStream.Pipe Function Under The Hood
 Local System Access:Node Process Object/FileSystem/Os Module/Buffers.
 Http Module Does Not Follow Redirects Automatically But Request Module Does[https://www.pluralsight.com/ Send Redirect/Status Code 304].For Ssl We Need Https Module.__dirname Is The Directory That The Current Script Is Running.
 
-Assert Module Provides equal(==)/strictEqual(===)/deepEqual.Mocha Run Test In Sync.Hook Exist before/after/beforeEach/afterEach.Should.js Bdd Style Support.
+Assert Module Provides equal(==)/strictEqual(===)/deepEqual.Mocha Run Test In Sync.Hook Exist before/after/beforeEach/afterEach.Should.js Bdd Style Support.Node Applicatiion Will Not Handle Cpu Intensive Task,Impact The Event Loop=>Solution Is Child Process.Long Non-Deterministic Time Child Process Via Spawn[Exit/Close Event]/Short Running Child Process Within Deterministic TimeFrame Exec/ExecFile[File Execute]/Fork[Send/Message Event]
+
+
+
+
