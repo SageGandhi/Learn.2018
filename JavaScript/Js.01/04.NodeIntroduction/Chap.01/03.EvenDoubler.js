@@ -10,3 +10,12 @@ var evenDoubler = (value,callBack)=>{
 };
 module.exports.EvenDoubler = evenDoubler;
 module.exports.AuthorName = "Prajit Gandhi";
+
+var evenDoublerSync = (value)=>{
+  if(value%2){
+      throw new Error("Odd Input Will Throw Error!!!");
+  }else{
+      return value*2;
+  }
+};
+module.exports.EvenDoublerSync = evenDoublerSync;
