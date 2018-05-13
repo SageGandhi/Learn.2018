@@ -2,7 +2,7 @@ var cluster = require('cluster'),//Do npm install cluster http
     http = require('http'),
     numberOfWorkers = 5;
     
-if(cluster.isMaster){
+if(cluster.isMaster){//Master Check
     for(var workerIndex = 0;workerIndex<numberOfWorkers;workerIndex++){
         console.log('Master Is About To Forking A Woorker...')
         cluster.fork();
@@ -15,7 +15,7 @@ if(cluster.isMaster){
         console.log(`Master Got Message From Exiting Subscription Event For Worker:${worker.id},Code:${code},Signal:${signal}`);
         cluster.fork();//Create A New Worker If Required        
     });
-}else if(cluster.isWorker){
+}else if(cluster.isWorker){//Labour/Worker
     console.log(`Worker Id:${cluster.worker.id}`);
     var countNoOfRequestServiced = 0;
     http.createServer((req,res)=>{
@@ -27,6 +27,6 @@ if(cluster.isMaster){
             cluster.worker.destroy();//Destroying Worker After Serviced 5 Request
         }
         //Use curl http://localhost:8080 For Simulation,Use process.env.PORT,process.env.IP For Cloud9 Ide
- //   }).listen(process.env.PORT,process.env.IP);
+        //}).listen(process.env.PORT,process.env.IP);
       }).listen(8080);
 }
