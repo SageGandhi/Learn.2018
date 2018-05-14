@@ -5,3 +5,4 @@ childProcess.on('message',(message)=>{//Receives Message From Child Process
        childProcess.send({Command:'Done'});//Send Request To Child Process
 });
 childProcess.send({Value:20,Command:'Double'});//Send Request To Child Process
+//cd JavaScript/Js.01/04.NodeIntroduction/Chap.04 & node ForkParentProcess
