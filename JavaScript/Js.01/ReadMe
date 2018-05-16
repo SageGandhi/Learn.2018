@@ -1,2 +1,1 @@
 Type node --version,If Any Error Occured,Install Node[https://nodejs.org/en/].Read,Evaluate,Print,Loop[Repl].Give node Command For Repl,Use .help,Check Options Available In Node  Repl.
-rc File Is Originated From Mit Compatible Time Sharing System[Run Command].In Node We Can Have .npmrc[https://docs.npmjs.com/files/npmrc] File Where We Can Save Default Vaue To Be Used When npm Sub Command  Executes[See ./.npmrc In This Directory]
