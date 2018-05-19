@@ -16,4 +16,6 @@ Install MongoDb Driver[npm install mongodb --save].Use Url Like mongodb://Mongo:
 Mongod Is Server/Mongo Is Client.Use ObjectId To Create ObjectId For Find Operation.Creating Passport Based Authentication/Authorization.Creating A SignUp Page In index.ejs[We Are Going To Use Local Strategy].
 Update User In Security[Mongo/mUW8fg8YDN3wgo] As This File Is Checked In Git.Post Requires BodyParser[MiddleWare To Create request.body Form Post Body].Passport Requires[CookieParser/EpressSession].For Passport Local 
 Strategy Do[npm install passport-local --save].Protecting Resource:Using MiddleWare To Specific Route[/profile] Or All Route[BookRouter].[\node_modules\.bin\eslint .\src\routes\adminRoutes.js --fix]|
-[.\node_modules\.bin\eslint .\src\routes\authRoutes.js --fix]|[.\node_modules\.bin\eslint .\src\routes\bookRouter.js --fix].
+[.\node_modules\.bin\eslint .\src\routes\authRoutes.js --fix]|[.\node_modules\.bin\eslint .\src\routes\bookRouter.js --fix].Create Api Keys For GoodRead[https://www.goodreads.com/api/keys].
+Have Got Key: 1YFQZU1Vb8bvIog0mAWu5Q/Secret: YtRVjwS4iB3FfRhefXAFWnfZi8uaiAoaAlnMe9TLIc[Will Be Reset Once Done With My Proof Of Concept].For XmlToJs Install axios,xml2js[npm install axios xml2js --save].
+Ejs By Default Escape Html Tag[Use - Instead Of =].Ex.<%=book.details.description%>=><%-book.details.description%> In bookSingle.ejs.
