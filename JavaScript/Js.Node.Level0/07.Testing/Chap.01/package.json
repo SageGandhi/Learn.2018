@@ -1,0 +1,21 @@
+{
+  "name": "chap.01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "coffee-script": "1.12.7",
+    "coffeescript": "2.3.0",
+    "moment": "2.22.1",
+    "underscore": "1.9.0"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0",
+    "sinon": "5.0.7"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
