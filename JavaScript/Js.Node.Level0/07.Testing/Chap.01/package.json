@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "async": "2.6.1",
     "coffee-script": "1.12.7",
     "coffeescript": "2.3.0",
     "moment": "2.22.1",
