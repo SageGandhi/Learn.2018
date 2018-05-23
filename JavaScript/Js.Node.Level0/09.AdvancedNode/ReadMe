@@ -1,0 +1,5 @@
+V8 Version Used:node --print 'process.versions.v8'.Shipping/Staged[--harmony Flag,node --harmony --print "'Node'.padEnd(10,'*')"]/InProgresss[node --v8-options|grep "in progress"] 
+Feature.https://github.com/SageGandhi/advanced-nodejs.Other Options node --expose-gc --eval "gc()"/node Repl:v8/v8.getHeapSpaceStatistics().Waiting For Asynchronous Events Using 
+LibUv.V8 Is Single Threaded.LivUv Is Providing EventLoop.Http-Parser[Http Message]/C-Ares[Async Dns Queries]/OpenSsl[Tls Crypto]/Zlib[Async Compression].node --check .\Repl.js 
+Check For Bad Syntax.node --print "process.arch"/node --print "os.cpus()"/node --print "process.env".process Is EventEmitter[uncaughtException/exit].Process Object Is A Bridge 
+Between Node Application & Running Environment.Buffer Needs Encoding.Buffer Slice Shares Same Memory Of Original Buffer.
