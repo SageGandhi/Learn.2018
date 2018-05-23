@@ -3,4 +3,5 @@ Feature.https://github.com/SageGandhi/advanced-nodejs.Other Options node --expos
 LibUv.V8 Is Single Threaded.LivUv Is Providing EventLoop.Http-Parser[Http Message]/C-Ares[Async Dns Queries]/OpenSsl[Tls Crypto]/Zlib[Async Compression].node --check .\Repl.js 
 Check For Bad Syntax.node --print "process.arch"/node --print "os.cpus()"/node --print "process.env".process Is EventEmitter[uncaughtException/exit].Process Object Is A Bridge 
 Between Node Application & Running Environment.Buffer Needs Encoding.Buffer Slice Shares Same Memory Of Original Buffer.Package.json Can Have Production Dependency/Dev Dependency/
-Optional Dependency.Do npm xmas[I Love It].
+Optional Dependency.Do npm xmas[I Love It].{"name":"hello-npm","version":"1.0.0","dependencies":{"request":"^2.79.0"},"devDependencies":{"babel-cli":"^6.18.0"},"optionalDependencies"
+:{"nodemon":"^1.11.0"}}.http://patorjk.com/software/taag/:AsciiArt.
