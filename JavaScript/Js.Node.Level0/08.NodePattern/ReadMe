@@ -1,4 +1,7 @@
-Ctrl+Alt+S[Settings]/Language,Framework/JavaScript/Library/Download/Install.Enable Version Control Integration[Vcs]/Git.Tools/Save File As Template.
-Koa/Express/Geddy/Sails Are All Web Framework.Do npm install grunt-cli --global & npm install grunt & npm install grunt-contrib-jshint --save.
-npm install grunt-contrib-watch --save.Do grunt jshint.Use Gruntfile.js,DO grunt watch.Nodeunit/Vows/Jasmine/Qunit/Mocha Are Testing Framework.
-Learning JavaScript Design Pattern:Addy Osmani[Must Read].ReThink Db[2nd GenerationDocument Store]
+Ctrl+Alt+S[Settings]/Language,Framework/JavaScript/Library/Download/Install.Enable Version Control Integration[Vcs]/Git.Tools/Save File As Template.Koa/Express/Geddy/Sails Are All Web 
+Framework.Do npm install grunt-cli --global & npm install grunt & npm install grunt-contrib-jshint --save.npm install grunt-contrib-watch --save.Do grunt jshint.Use Gruntfile.js,
+DO grunt watch.Nodeunit/Vows/Jasmine/Qunit/Mocha Are Testing Framework.Learning JavaScript Design Pattern:Addy Osmani[Must Read].ReThink Db[2nd GenerationDocument Store].Require 
+Function Available In global Object,module Also Available In global.Resolving[Absolute File Path]->Loading[Content Of The File]->Wrapping[Gives Module Private Scope]->Evaluating[Node 
+Evaluating The Module]->Caching[Cache The Module,2nd Time Skip Prior Steps].Module.Module.path Explored For Module,index.js Is Default File Name For A Module[When Module Is 
+Directory,Package.json Contains main Property,By Default It Is index.js].Node Require First Find Js File For Module Name,Else Json File With Module Name,Or .node Binary File For C++ 
+Addon/Binary.
