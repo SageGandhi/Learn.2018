@@ -1,0 +1,4 @@
+Ctrl+Alt+S[Settings]/Language,Framework/JavaScript/Library/Download/Install.Enable Version Control Integration[Vcs]/Git.Tools/Save File As Template.
+Koa/Express/Geddy/Sails Are All Web Framework.Do npm install grunt-cli --global & npm install grunt & npm install grunt-contrib-jshint --save.
+npm install grunt-contrib-watch --save.Do grunt jshint.Use Gruntfile.js,DO grunt watch.Nodeunit/Vows/Jasmine/Qunit/Mocha Are Testing Framework.
+Learning JavaScript Design Pattern:Addy Osmani[Must Read].ReThink Db[2nd GenerationDocument Store]
