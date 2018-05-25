@@ -13,4 +13,4 @@ Event Loop Phase:Timers->Io Callback->Idle/Prepare->Poll[Incoming Connection/Dat
 
 Import[require('events')/Extend[EventEmitter]/Init[new Call]/Emit[Named Event]/Listen[Add Listener To Named Event]].[Util.format/inspect/deprecated/inherit/debuglog].
 Set BreakPoint Using sb(LineNo),Use node debug/Watch Expresion:watch(expression).Chrome Dev Tool From Node:node --inspect --debug-brk.
-Readable/Writable/Duplex/Transform:Stream.
+Readable/Writable/Duplex/Transform:Stream.Scalable To Multiple Node->Node Js Name.
