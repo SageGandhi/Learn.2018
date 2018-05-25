@@ -5,3 +5,10 @@ Check For Bad Syntax.node --print "process.arch"/node --print "os.cpus()"/node -
 Between Node Application & Running Environment.Buffer Needs Encoding.Buffer Slice Shares Same Memory Of Original Buffer.Package.json Can Have Production Dependency/Dev Dependency/
 Optional Dependency.Do npm xmas[I Love It].{"name":"hello-npm","version":"1.0.0","dependencies":{"request":"^2.79.0"},"devDependencies":{"babel-cli":"^6.18.0"},"optionalDependencies"
 :{"nodemon":"^1.11.0"}}.http://patorjk.com/software/taag/:AsciiArt.
+
+Synchronously/Fork[Not Scalable]/Threads[Not Manageable]/Event Loop.The Entity That Handles External Events & Converts Them Into Callback Invocations.A Loop That Picks Events From 
+The Event Queue & Pushes Their Callbacks To The Call Stack.Node Api/V8[Heap/Stack]/Queue[Event/Callback]/Event Loop.NodeJs[LibUv]/Ruby[EventMachine]/Python[Twisted].StackFrame[
+Function Args,Local Variable].When The Call Stack Gets Empty->While Event Queue Is Not Empty->Deque Event From Queue->If A Callback Associated With That Event Call The Callback.
+Event Loop Phase:Timers->Io Callback->Idle/Prepare->Poll[Incoming Connection/Data]->Check->Close Callback->Timers.Callback Does Not Mean Asynchrony.
+
+Import[require('events')/Extend[EventEmitter]/Init[new Call]/Emit[Named Event]/Listen[Add Listener To Named Event]].
