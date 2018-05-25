@@ -11,4 +11,6 @@ The Event Queue & Pushes Their Callbacks To The Call Stack.Node Api/V8[Heap/Stac
 Function Args,Local Variable].When The Call Stack Gets Empty->While Event Queue Is Not Empty->Deque Event From Queue->If A Callback Associated With That Event Call The Callback.
 Event Loop Phase:Timers->Io Callback->Idle/Prepare->Poll[Incoming Connection/Data]->Check->Close Callback->Timers.Callback Does Not Mean Asynchrony.
 
-Import[require('events')/Extend[EventEmitter]/Init[new Call]/Emit[Named Event]/Listen[Add Listener To Named Event]].
+Import[require('events')/Extend[EventEmitter]/Init[new Call]/Emit[Named Event]/Listen[Add Listener To Named Event]].[Util.format/inspect/deprecated/inherit/debuglog].
+Set BreakPoint Using sb(LineNo),Use node debug/Watch Expresion:watch(expression).Chrome Dev Tool From Node:node --inspect --debug-brk.
+Readable/Writable/Duplex/Transform:Stream.
