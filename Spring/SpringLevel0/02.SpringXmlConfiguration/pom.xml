@@ -8,7 +8,7 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>02.SpringXmlConfiguration</name>
+	<name>SpringMaven01</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -30,6 +30,8 @@
 	</dependencies>
 	<!-- Build -->
 	<build>
+		<!-- mvn clean package install -->
+		<finalName>SpringMaven02</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
