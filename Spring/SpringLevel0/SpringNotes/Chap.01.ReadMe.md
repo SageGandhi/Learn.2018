@@ -4,4 +4,5 @@ Webflux[ Reactive,Asynchronous]],Core[i18n: Internationalization Support,Validat
 Integration[Rmi,Ws,Mq], DataAccess.Tightly/Loosely-Coupled.Servlet Low-Level Api.http://spring.io/projects.Spring Cloud/Data/Security.
 Ant Replacement For Make,Designed For CrossPlatform,Procedural.Ivy[Manage Transitive Dependency] With Ant[build.xml].Maven[pom.xml].Goal:Clean/Compile/Package/Install[Local Repoository]/Deploy
 [Remote Repoository].GroupId,ArtifactId,Version[Gav].Type Pom Includes All Dependency For That Pom.Scopes:compile/provided[Servlet]/runtime[Driver]/test/system/import[Dependency Management].
-Dependency/Plugin Repoository:Comes From SuperPom.Nexus/Artifactory.Phase:[validate,compile,test,package,integration-test,verify,install,deploy].EffectivePom.
+Dependency/Plugin Repoository:Comes From SuperPom.Nexus/Artifactory.Phase:[validate,compile,test,package,integration-test,verify,install,deploy].EffectivePom.Jsr-330:Dependency Injection.
+Singleton/ProtoType/Request/Session/Global Socpe.For Property File Use context:property-placeholder & context:annotation-config To Utilize @Value  Annotation.In Annotation Based Configuration Use @PropertySource/@PropertySources With PropertySourcesPlaceholderConfigurer Bean Configured.
