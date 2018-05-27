@@ -9,4 +9,7 @@ EffectivePom.Jsr-330:Dependency Injection.Singleton/ProtoType/Request/Session/Gl
 @Value  Annotation.In Annotation Based Configuration Use @PropertySource/@PropertySources With PropertySourcesPlaceholderConfigurer Bean Configured.Spring.tld & Spring-Form.tld.
 Jsr-303 Reference Implementation Is Hibernate Validator.BeanNameViewResolver Is A ViewResolver Implementation That Resolves The View Name Returned From The Controller As A Bean Name
 Registered In The Application Context.If The Controller Returns The ViewName As JsonView, BeanNameViewResolver Invokes The Corresponding View Implementation Bean Named As JsonView 
-& Resolves/Parses The Model Object Into The Corresponding View Type(Jsp, Velocity, Thymeleaf)/Format(Json,Xml).
+& Resolves/Parses The Model Object Into The Corresponding View Type(Jsp, Velocity, Thymeleaf)/Format(Json,Xml).ContainerLess[Servlet 3.0 Spoec With Embeded Container,All 
+Configuration Exist Inside Application Using Java Configuration].Use Spring Starter Project.Annotation For ComponentScan,Handler,Interceptor,Formatter,Converter.Do mvn 
+dependency:resolve.Keep All Views Under Web-Inf[Not Publicly Accessible] For Security.edu.gandhi.prajit.spring.maven.validator.custom.Phone Creates A Custom Validator For 
+edu.gandhi.prajit.spring.maven.model.Attendee Class In 06.SpringMvcBase4.

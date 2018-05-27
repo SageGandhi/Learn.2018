@@ -49,7 +49,7 @@
 				<version>2.4</version>
 				<!-- In Whar Configuration/How Plugin Execute -->
 				<configuration>
-					<useDefaultManifestFile>true</useDefaultManifestFile>
+					<useDefaultManifestFile>false</useDefaultManifestFile>
 				</configuration>
 			</plugin>
 			<plugin>
