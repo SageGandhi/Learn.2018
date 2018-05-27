@@ -12,4 +12,5 @@ Registered In The Application Context.If The Controller Returns The ViewName As 
 & Resolves/Parses The Model Object Into The Corresponding View Type(Jsp, Velocity, Thymeleaf)/Format(Json,Xml).ContainerLess[Servlet 3.0 Spoec With Embeded Container,All 
 Configuration Exist Inside Application Using Java Configuration].Use Spring Starter Project.Annotation For ComponentScan,Handler,Interceptor,Formatter,Converter.Do mvn 
 dependency:resolve.Keep All Views Under Web-Inf[Not Publicly Accessible] For Security.edu.gandhi.prajit.spring.maven.validator.custom.Phone Creates A Custom Validator For 
-edu.gandhi.prajit.spring.maven.model.Attendee Class In 06.SpringMvcBase4.
+edu.gandhi.prajit.spring.maven.model.Attendee Class In 06.SpringMvcBase4.Create Rds MySql Instance In https://ap-south-1.console.aws.amazon.com/rds.Select Endpoint & Create 
+jdbc:mysql://testdatabase.c1zgljka8wix.ap-south-1.rds.amazonaws.com,Provide UserName/Password/DatabaseName,Select Jar According To DbEngine.
