@@ -14,3 +14,8 @@ Configuration Exist Inside Application Using Java Configuration].Use Spring Star
 dependency:resolve.Keep All Views Under Web-Inf[Not Publicly Accessible] For Security.edu.gandhi.prajit.spring.maven.validator.custom.Phone Creates A Custom Validator For 
 edu.gandhi.prajit.spring.maven.model.Attendee Class In 06.SpringMvcBase4.Create Rds MySql Instance In https://ap-south-1.console.aws.amazon.com/rds.Select Endpoint & Create 
 jdbc:mysql://testdatabase.c1zgljka8wix.ap-south-1.rds.amazonaws.com,Provide UserName/Password/DatabaseName,Select Jar According To DbEngine.
+
+Spring Config Server Encrypt/Decrypt Property Values:
+StrongKey CryptoCabinetJava Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 8 Download:
+Use Key Tool For keytool -genkeypair -alias ConfigServerKey -keyalg RSA -dname "CN=Config Server,OU=Spring Cloud,O=PrajitGandhi" -keypass K3y_S3cr3t -keystore ConfigServerStore.jks -storepass K3y_S3cr3t
+Zuul Is GateKeeper For Movie GhostBuster,Api Gateway For Netflix.Ribbon Is Load Balacer.

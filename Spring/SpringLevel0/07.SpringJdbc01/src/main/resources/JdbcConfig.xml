@@ -13,9 +13,9 @@
 	<context:component-scan base-package="edu.gandhi.prajit.spring.maven"></context:component-scan>
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://testdatabase.c1zgljka8wix.ap-south-1.rds.amazonaws.com/TestDb" />
-		<property name="username" value="kali2018" />
-		<property name="password" value="KaliGandhi" />
+		<property name="url" value="jdbc:mysql://prajitgandhi.c1zgljka8wix.ap-south-1.rds.amazonaws.com/prajitgandhi" />
+		<property name="username" value="prajitgandhi" />
+		<property name="password" value="prajitgandhi" />
 	</bean>
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"></bean>
 	<!-- For Transaction -->
