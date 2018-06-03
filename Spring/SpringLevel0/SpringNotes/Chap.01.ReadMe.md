@@ -18,4 +18,4 @@ jdbc:mysql://testdatabase.c1zgljka8wix.ap-south-1.rds.amazonaws.com,Provide User
 Spring Config Server Encrypt/Decrypt Property Values:
 StrongKey CryptoCabinetJava Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 8 Download:
 Use Key Tool For keytool -genkeypair -alias ConfigServerKey -keyalg RSA -dname "CN=Config Server,OU=Spring Cloud,O=PrajitGandhi" -keypass K3y_S3cr3t -keystore ConfigServerStore.jks -storepass K3y_S3cr3t
-Zuul Is GateKeeper For Movie GhostBuster,Api Gateway For Netflix.Ribbon Is Load Balacer.
+Zuul Is GateKeeper For Movie GhostBuster,Api Gateway For Netflix.Ribbon Is Load Balancer.Hystrix Is Implementing CircuitBreaker.Ribbon Is Load Balancer.
