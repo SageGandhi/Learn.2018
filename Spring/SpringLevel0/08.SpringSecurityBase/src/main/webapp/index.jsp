@@ -47,6 +47,7 @@ body {
 			<sec:authorize ifAnyGranted="ROLE_ADMIN">
 				<a class="btn btn-primary" href="editGoal.html"> Edit Goal[Admin] » </a>
 			</sec:authorize>
+			 <a class="btn btn-warning" href="j_spring_security_logout">Logout >></a>
 		</div>
 		<div></div>
 	</div>
