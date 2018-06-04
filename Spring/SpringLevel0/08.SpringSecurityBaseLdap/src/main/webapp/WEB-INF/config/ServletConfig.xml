@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<mvc:resources location="assets" mapping="/assets/**"></mvc:resources>
+	<mvc:resources location="pdfs" mapping="/pdfs/**"></mvc:resources>
+	<context:component-scan base-package="edu.gandhi.prajit.spring.maven"/>
+	
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver" p:order="1">
+		<property name="contentNegotiationManager">
+			<bean class="org.springframework.web.accept.ContentNegotiationManager">
+				<constructor-arg>
+					<bean class="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
+						<constructor-arg>
+							<map>
+								<entry key="json" value="application/json"></entry>
+								<entry key="xml" value="application/xml"></entry>
+							</map>
+						</constructor-arg>
+					</bean>
+				</constructor-arg>
+			</bean>
+		</property>
+		<property name="defaultViews">
+			<list>
+				<bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"></bean>
+				<bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+					<constructor-arg>
+						<bean class="org.springframework.oxm.xstream.XStreamMarshaller" p:autodetectAnnotations="true"></bean>
+					</constructor-arg>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="language"></bean>
+	</mvc:interceptors>
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" p:defaultLocale="en"></bean>
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages"></bean>
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" p:order="2"></bean>
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0"></bean>
+	<!-- Global Method Security For Controller Method For Mvc Dispatcher Context -->
+	<security:global-method-security pre-post-annotations="enabled">
+		<!-- Expression Handler For Permission Evaluator -->
+		<security:expression-handler ref="expressionHandler"></security:expression-handler>
+	</security:global-method-security>
+	<bean id="expressionHandler" class="org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler" p:permissionEvaluator-ref="goalPermissionEvaluator"></bean>
+	<!-- Getting DataSource From Parent Context -->
+	<bean id="goalPermissionEvaluator" class="edu.gandhi.prajit.spring.maven.security.GoalPermissionEvaluator" p:dataSource-ref="dataSource"></bean>
+</beans>
