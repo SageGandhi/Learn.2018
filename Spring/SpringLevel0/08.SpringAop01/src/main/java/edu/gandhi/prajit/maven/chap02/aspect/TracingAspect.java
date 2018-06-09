@@ -15,9 +15,10 @@ public class TracingAspect {
 	public boolean isEnteringCalled() {
 		return enteringCalled;
 	}
+
 	@Before("execution(* *(..))")
 	public void tracing(JoinPoint joinPoint) {
 		this.enteringCalled = true;
-		logger.trace("Entering " + joinPoint.getArgs());
+		logger.trace("Entering {},{}", joinPoint.getArgs(), joinPoint.getStaticPart().getSignature().toLongString());
 	}
 }
