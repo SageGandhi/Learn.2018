@@ -1,0 +1,11 @@
+TypeScript Type Definition File[*.d.ts].
+Read 
+    TypeScript Fundamentals
+    AngularJs With TypeScript
+    Use Es6 With TypeScript
+    Visual Studio Code
+ng serve -o Starts A WebServer & Opens The Url In Browser.
+Use Import/Export For Modules In Angular.
+Component=View Layout[Template]+Class[Properties+Methods]+Metadata/Decorator[@Component({}):This Is A Function,Take {} Parameter].Selector Defines The Component Directive Name,
+Custom Html Tag.{{DataBinding Between Class & View}}.Decorator Add Metadata To Class/Properties/Method.
+Javascript Framework For Reactive SinglePage Application.
