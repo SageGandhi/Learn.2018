@@ -18,13 +18,20 @@ export class ProductListComponent implements OnInit {
   dataFromChildComponent: string = '';
   filteredProducts: IProduct[];
   products: IProduct[];
+  errorMessage: string;
   //Same As Creating Local Variable _productService  & Set It In Constructor
   constructor(private _productService: ProductService) {
     console.log('Constructor Invoked Before NgOnInit');
   }
   ngOnInit(): void {
-    this.products = this._productService.getProducts();
-    this.filteredProducts = this.products;
+    this._productService.getProducts().subscribe(
+      products => {
+        //Due To Async Call
+        this.products = products;
+        this.filteredProducts = this.products;
+      },
+      error => this.errorMessage = <any>error
+    );
     console.log('NgOnInit Invoked After Constructor');
   }
   onOutputFromNestedChild(data: string): void {
