@@ -1,6 +1,6 @@
 <div class='panel panel-primary'>
   <div class='panel-heading'>
-      {{pageTitle}}
+      {{pageTitle}} {{dataFromChildComponent}}
   </div>
   <div class='panel-body'>
       <div class='row'>
@@ -16,7 +16,7 @@
       </div>
       <div class='table-responsive'>
           <table class='table'
-                  *ngIf='products && products.length'>
+                  *ngIf='filteredProducts && filteredProducts.length'>
               <thead>
                   <tr>
                       <th>
@@ -32,17 +32,20 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr *ngFor='let product of products'>
+                  <tr *ngFor='let product of filteredProducts'>
                       <td><img [src]='product.imageUrl' [title]='product.productName'
                         [style.width.px]='imageWidth' [style.margin.px]='imageMarginWidth'
                         *ngIf='showImage'/></td>
                       <td>{{ product.productName }}</td>
                       <!--Using Pipes,LowerCase-->
-                      <td>{{ product.productCode | lowercase }}</td>
+                      <td>{{ product.productCode | convertToSpaces:'-'}}</td>
                       <td>{{ product.releaseDate }}</td>
                       <!--Using Pipes,Currency,Locale,Currency Symbol Show/Hide,Minimum No Of Integer Digit:Minimum No Of Fractional Digit:Maximum No Of Fractional Digit-->
                       <td>{{ product.price | currency:'USD':true:'1.2-3' }}</td>
-                      <td>{{ product.starRating }}</td>
+                      <td>
+                        <pm-star [rating]='product.starRating' (output)='onOutputFromNestedChild($event)'></pm-star>
+                        {{ product.starRating }}
+                      </td>
                   </tr>
               </tbody>
           </table>

@@ -1,40 +1,47 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IProduct } from './product';
+import { ProductService } from './product.service';
 
 @Component({
   selector: "pm-products",
-  templateUrl: './product-list.component.html'
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
   /***Structural Directive Start With A * Like *ngIf/*ngFor,BrowserModule Expose These Directives.For In Loop ,We Iterate Over [In]dex,
    * For Of Loop We Iterate Over Objects,[]:Used For Property Binding,():Used For Event Binding,Two Way Binding Via[()]*/
   pageTitle: string = "Product List";
-  imageWidth:number = 25;
-  imageMarginWidth:number = 2;
-  showImage:boolean = false;
-  listFilter:string ='';
-  products: any[] = [
-    {
-      "productId": 1,
-      "productName": "Leaf Rake",
-      "productCode": "GDN-0011",
-      "releaseDate": "March 19, 2016",
-      "description": "Leaf rake with 48-inch wooden handle.",
-      "price": 19.95,
-      "starRating": 3.2,
-      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
-    },
-    {
-      "productId": 2,
-      "productName": "Garden Cart",
-      "productCode": "GDN-0023",
-      "releaseDate": "March 18, 2016",
-      "description": "15 gallon capacity rolling garden cart",
-      "price": 32.99,
-      "starRating": 4.2,
-      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-    }
-  ];
-  toggleImage():void {
-    this.showImage =!this.showImage;
+  imageWidth: number = 25;
+  imageMarginWidth: number = 2;
+  showImage: boolean = false;
+  _listFilter: string = '';
+  dataFromChildComponent: string = '';
+  filteredProducts: IProduct[];
+  products: IProduct[];
+  //Same As Creating Local Variable _productService  & Set It In Constructor
+  constructor(private _productService: ProductService) {
+    console.log('Constructor Invoked Before NgOnInit');
+  }
+  ngOnInit(): void {
+    this.products = this._productService.getProducts();
+    this.filteredProducts = this.products;
+    console.log('NgOnInit Invoked After Constructor');
+  }
+  onOutputFromNestedChild(data: string): void {
+    console.log(`Nested Child Component Pass Following Data:${data}`);
+    this.dataFromChildComponent = `-Nested Child Component Pass Following Data:${data}`;
+  }
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
+  filteredProductsByCriteria(criteria: string): IProduct[] {
+    return this.products.filter((product: IProduct) => product.productName.toLocaleLowerCase().indexOf(criteria.toLocaleLowerCase()) != -1);
+  }
+  get listFilter(): string {
+    return this._listFilter;
+  }
+  set listFilter(value: string) {
+    this._listFilter = value;
+    this.filteredProducts = this.listFilter ? this.filteredProductsByCriteria(this.listFilter) : this.products;
   }
 }
