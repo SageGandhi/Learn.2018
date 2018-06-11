@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
 import { ProductService } from './product.service';
-
+//For Nestable Component We Need To Define A Selector,For Routing We Do Not Need
 @Component({
-  selector: "pm-products",
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
