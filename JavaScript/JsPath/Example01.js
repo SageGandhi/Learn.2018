@@ -17,3 +17,4 @@ for (let suitIdx = 0; suitIdx < suits.length; suitIdx++) {
     }
 }
 console.log(Math.trunc(Math.random()*suits.length*values.length));
+/*alert('Welcome'); confirm('I Love Javascript'); prompt('Run!!');*/
