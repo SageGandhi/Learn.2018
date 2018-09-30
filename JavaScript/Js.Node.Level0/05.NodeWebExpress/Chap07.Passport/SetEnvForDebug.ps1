@@ -1,1 +1,0 @@
-$env:DEBUG = "*,-not_this"

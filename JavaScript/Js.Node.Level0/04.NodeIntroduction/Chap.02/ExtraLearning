@@ -1,8 +1,0 @@
- Felix’s Node.js Style Guide : http://nodeguide.com/style.html 
- Npm Cheatsheet : http://blog.nodejitsu.com/npm-cheatsheet 
- Package.json, An Interactive Guide : http://package.json.jit.su/ 
- What Is The File ‘package.json’ : http://docs.nodejitsu.com/articles/getting-started/npm/what-is-thefile-package-json
- Npm’s Semantic Versioning : https://github.com/isaacs/node-semver 
- Node.js Documentation : http://nodejs.org/api/ 
- Npm Homepage : https://npmjs.org/ 
- Streams, Pipes, Mega Pipes : http://felixge.s3.amazonaws.com/11/nodejs-streams.pdf 

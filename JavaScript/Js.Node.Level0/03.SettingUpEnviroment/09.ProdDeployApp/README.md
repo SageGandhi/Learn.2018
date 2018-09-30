@@ -1,2 +1,0 @@
-# SettingUpEnviromentProdDeployApp
-SettingUpEnviromentProdDeployApp
